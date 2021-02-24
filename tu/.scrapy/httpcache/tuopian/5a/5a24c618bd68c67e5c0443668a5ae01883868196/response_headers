@@ -1,0 +1,17 @@
+Date: Wed, 24 Feb 2021 12:43:19 GMT
+Content-Type: image/jpeg
+Last-Modified: Sun, 26 May 2019 22:01:12 GMT
+Etag: "5ceb0ca8-1b1e8"
+Expires: Fri, 26 Mar 2021 12:43:18 GMT
+Cache-Control: public, max-age=2592000
+Pragma: public
+Access-Control-Allow-Origin: *
+Cf-Cache-Status: MISS
+Accept-Ranges: bytes
+Cf-Request-Id: 0875a9bd0d0000364f2a1a5000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=P8TQp1DuYDzXIlPp5S3QD81rNSbn8WTOz8%2Fe%2FxPBtWdT4A%2FDC4iQByGIazqNDx04m0Ap8ocignZ0fsJx2vqsX6djNlqbq1EeRuakqiTLiA%3D%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 62694574ee91364f-LAX
