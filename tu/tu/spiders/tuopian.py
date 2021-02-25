@@ -9,8 +9,8 @@ class TuopianSpider(scrapy.Spider):
     # start_urls = ["https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={a}"]
     
     def start_requests(self):
-        urls = 'https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={}'
-        for i in range(1, 5):
+        urls = 'https://wallhaven.cc/toplist?page={}'
+        for i in range(1, 120):
             yield scrapy.Request(urls.format(i), callback=self.parse)
     
     

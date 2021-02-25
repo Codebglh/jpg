@@ -80,7 +80,7 @@ ITEM_PIPELINES = {
    'tu.pipelines.TuPipeline': 300,
    # 'scrapy.pipelines.images.ImagesPipeline':1
 }
-IMAGES_STORE = "tu/tu"
+# IMAGES_STORE = "tu/tu"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

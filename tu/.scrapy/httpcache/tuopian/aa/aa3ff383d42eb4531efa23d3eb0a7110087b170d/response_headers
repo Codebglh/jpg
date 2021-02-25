@@ -1,0 +1,10 @@
+Date: Thu, 25 Feb 2021 09:36:38 GMT
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: sameorigin
+Cf-Cache-Status: DYNAMIC
+Cf-Request-Id: 087a253ab60000e819be235000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Nh%2Fwe%2Fj8L93U6eBY3j2sgJTEAz%2BXctduchm0WNZXkvElZu0kjFjxUPmd1bwTpftKqWj9MEWOPRoFBmHwdo7t%2BAHjmAkl8TPe9UvLLBw%3D"}],"max_age":604800,"group":"cf-nel"}
+Nel: {"max_age":604800,"report_to":"cf-nel"}
+Server: cloudflare
+Cf-Ray: 627071712d74e819-LAX

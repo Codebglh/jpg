@@ -1,0 +1,15 @@
+Date: Thu, 25 Feb 2021 09:36:28 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: __cfduid=d75d03e298f92f88c88541beb7174b0221614245788; expires=Sat, 27-Mar-21 09:36:28 GMT; path=/; domain=.wallhaven.cc; HttpOnly; SameSite=Lax
+Set-Cookie: XSRF-TOKEN=eyJpdiI6InFpWDFrZ3V3OW43RTJ3THRqcWsxekE9PSIsInZhbHVlIjoiZ2VIdkNZZTFWUXlDNHhVek5zRkplXC9meVZGWk9jOXM1Q1QwQzkxVnptanZZM3hXU2tWRzJLUCtwQlFibTJDcUciLCJtYWMiOiJjZDU1MGFkM2ViNmM2NzExNDY0NDc4ODg2ZTY1MTE0MDg4MWUxZGUxNWZlZGIxNTEwZjk0MGRjOWE2MjA3OThmIn0%3D; expires=Thu, 25-Feb-2021 11:36:28 GMT; Max-Age=7200; path=/; secure; samesite=strict
+Set-Cookie: wallhaven_session=eyJpdiI6IjBxeGJPRndqRDVTTzR1YnIwdURZVHc9PSIsInZhbHVlIjoiTXlBTUFHTHFaUTV3MGlZK0JRUUhvbGdRSXY3K2p6NGtNMThoQ2dnVk5XYnFBSmFyMmZUMU4rUGc1cnRpcWt6KyIsIm1hYyI6ImFkN2Q5YzI3ZjQ5ZTdlNjRjOGRiYjJhZWFmNWM3ODc5ZjY5M2NkNWQzMWEzMzNhMWRjOGY2YzRhOWZhYTcwOGEifQ%3D%3D; expires=Thu, 25-Feb-2021 11:36:28 GMT; Max-Age=7200; path=/; secure; httponly; samesite=strict
+Cache-Control: no-cache, private
+X-Frame-Options: sameorigin
+Cf-Cache-Status: DYNAMIC
+Cf-Request-Id: 087a2511ee0000eaf4d49aa000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=aVWxc0%2F8%2B1WDeUf2koRFY%2Fgy9r9mdCbRTqu7wpPGWX0TEY%2FC2FI2r2ocsHsvkLIRnobqA%2Bl44ZxKx3aIWPpducSm8AEZoE8xFYrzqi4%3D"}]}
+Nel: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+Cf-Ray: 6270712fdf07eaf4-LAX
+Content-Encoding: gzip
