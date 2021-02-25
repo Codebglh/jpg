@@ -7,6 +7,7 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 import pymysql
+import requests
 from scrapy.pipelines.images import ImagesPipeline
 import scrapy
 class TuPipeline:
@@ -23,20 +24,15 @@ class TuPipeline:
         self.cursor.close()
         self.connect.close()
    
-class TUipeline1:
+class TuPipeline1:
     def process_item(self, item, spider):
         url = item['image_urls']
         name=item["images"]
-        path = '/Users/bgcde/文档/jpg/laj' #路径自行设定
-        print(url)
-        print(name)
+        path = '/Users/bgcde/文档/jpg/laj/' #路径自行设定
+        # print(name)
+        dizi=path + name
+        data = requests.get(url)
+        with open(dizi, 'wb') as file:
+            file.write(data.content)
+            file.flush()
         return item
-        
-        # for i in range(len(picHTML)):
-        #     html = picHTML[i]
-        #     img_name = path + str(page)+"-"+str(i)+'.png' #图片名称
-        #         data = requests.get(picHTML[i])
-        #         with open(img_name, 'wb') as file:
-        #             file.write(data.content)
-        #             file.flush()    
-        #             return item
