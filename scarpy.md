@@ -158,3 +158,19 @@ class TuPipeline1:
         self.connect.close()
 ```
 
+##### 14
+# 导入pymysql模块
+import pymysql
+# 连接database
+conn = pymysql.connect(host="localhost", user="root",password="liuhonga",database="img",charset="utf8")
+# 得到一个可以执行SQL语句的光标对象
+cursor = conn.cursor()
+# 查询数据的SQL语句
+sql = "SELECT url,_image from img;"
+# 执行SQL语句
+cursor.execute(sql)
+# 获取多条查询数据
+ret = cursor.fetchall()
+cursor.close()
+conn.close()
+print(ret)

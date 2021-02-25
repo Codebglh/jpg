@@ -4,7 +4,7 @@ from tu.items import TuItem
 class TuopianSpider(scrapy.Spider):
     name = 'tuopian'
     allowed_domains = ['wallhaven.cc']
-    start_urls = ['https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={a}' for a in range(0,1000)]
+    start_urls = ['https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={a}' for a in range(0,13)]
     
     def parse(self, response):
         y = response.xpath('/html/body/main/div/section/ul')

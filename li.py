@@ -1,22 +1,24 @@
-import requests
-import re
-import time
-from bs4 import BeautifulSoup 
-'''
-总思路：
-0.在”https://wallhaven.cc/toplist“加“?page=页数”可进行翻页
-1.使用Chrome开发工具，发现在主页有两种图片的url，一个为缩略图可直接下载，一个为原图，需要进入下载。此次选择下载原图。
-2.观察网页源代码，原图url在<a class="perview">中，使用BeautifulSoup和正则表达式获取ID。
-3.获取ID后进入单图片页面，发现有3个带有<img>标签的片段，其中第三个片段的src为图片下载url。
-4.获取下载url后便可下载到制定文件夹中。
-'''
+# import requests
+# import re
+# import pymysql
+# import time
+# from bs4 import BeautifulSoup 
+# '''
+# 总思路：
+# 0.在”https://wallhaven.cc/toplist“加“?page=页数”可进行翻页
+# 1.使用Chrome开发工具，发现在主页有两种图片的url，一个为缩略图可直接下载，一个为原图，需要进入下载。此次选择下载原图。
+# 2.观察网页源代码，原图url在<a class="perview">中，使用BeautifulSoup和正则表达式获取ID。
+# 3.获取ID后进入单图片页面，发现有3个带有<img>标签的片段，其中第三个片段的src为图片下载url。
+# 4.获取下载url后便可下载到制定文件夹中。
+# '''
 
-'''
-函数说明：
-getPic_ID()：获取每张图的ID
-getPic_HTML()：获取每张图的url
-Download():根据url下载并保存图片
-'''
+# '''
+# 函数说明：
+# getPic_ID()：获取每张图的ID
+# getPic_HTML()：获取每张图的url
+# Download():根据url下载并保存图片
+# '''
+
 def getPic_ID(pic_id, page, header):
     url = "https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page="+str(page) 
     
@@ -50,15 +52,10 @@ def Download(picHTML, page):
     for i in range(len(picHTML)):
         html = picHTML[i]
         img_name = path + str(page)+"-"+str(i)+'.png' #图片名称
-        try:
             data = requests.get(picHTML[i])
             with open(img_name, 'wb') as file:
                 file.write(data.content)
                 file.flush()
-            print("第"+str(page)+"页第"+str(i)+"张图片下载完成")
-        except:
-            print("第"+str(page)+"页第"+str(i)+"张图片下载失败")
-    print("第"+str(page)+"页爬取完成")
     
 def main():
     header = {

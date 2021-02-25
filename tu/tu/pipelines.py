@@ -22,4 +22,21 @@ class TuPipeline:
     def close_spider(self,spider):
         self.cursor.close()
         self.connect.close()
+   
+class TUipeline1:
+    def process_item(self, item, spider):
+        url = item['image_urls']
+        name=item["images"]
+        path = '/Users/bgcde/文档/jpg/laj' #路径自行设定
+        print(url)
+        print(name)
+        return item
         
+        # for i in range(len(picHTML)):
+        #     html = picHTML[i]
+        #     img_name = path + str(page)+"-"+str(i)+'.png' #图片名称
+        #         data = requests.get(picHTML[i])
+        #         with open(img_name, 'wb') as file:
+        #             file.write(data.content)
+        #             file.flush()    
+        #             return item
