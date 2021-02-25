@@ -21,7 +21,7 @@ LOG_LEVEL = "WARNING"
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 3
+CONCURRENT_REQUESTS = 7
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -76,9 +76,12 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'tu.pipelines.TuPipeline1': 30,
+   # 'tu.pipelines.TuPipeline1': 30,
    'tu.pipelines.TuPipeline': 300,
+   'scrapy.pipelines.images.ImagesPipeline':1
 }
+IMAGES_STORE = '/Users/bgcde/文档/jpg/laj'
+
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
