@@ -5,9 +5,9 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
-import pymysql
-import requests
+# from itemadapter import ItemAdapter
+# import pymysql
+# import requests
 from scrapy.pipelines.images import ImagesPipeline
 import scrapy
 # class TuPipeline2:
@@ -41,6 +41,7 @@ import scrapy
 class TuPipeline(ImagesPipeline):
         def get_medie_requests(self,item,info):
             image_link = item['image_link']
+            print(image_link)
             yield scrapy.Request(image_link)
         def item_completed(self,results,item,info):
             return item

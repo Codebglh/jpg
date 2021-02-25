@@ -10,7 +10,7 @@ class TuopianSpider(scrapy.Spider):
     
     def start_requests(self):
         urls = 'https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={}'
-        for i in range(1, 20):
+        for i in range(15, 16):
             yield scrapy.Request(urls.format(i), callback=self.parse)
     
     
@@ -29,7 +29,8 @@ class TuopianSpider(scrapy.Spider):
                 item = TuItem()
                 item["image_link"]=url
                 item["images"]=img
-                print(img)
+                # print(img)
                 # print(qian)
                 # print(url)
+                # print(item)
                 yield item          

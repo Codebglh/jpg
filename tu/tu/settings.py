@@ -78,9 +78,9 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
    # 'tu.pipelines.TuPipeline1': 30,
    'tu.pipelines.TuPipeline': 300,
-   'scrapy.pipelines.images.ImagesPipeline':1
+   # 'scrapy.pipelines.images.ImagesPipeline':1
 }
-IMAGES_STORE = '/Users/bgcde/文档/jpg/laj'
+IMAGES_STORE = "tu/tu"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
