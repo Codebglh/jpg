@@ -17,7 +17,7 @@ class TuPipeline:
         self.cursor=self.connect.cursor()
     def process_item(self, item, spider):
         # 往数据库里面写入数据
-        self.cursor.execute('insert into img(url,_image)VALUES ("{}","{}")'.format(item['image_urls'],item['images']))
+        self.cursor.execute('insert into img1(url,_image)VALUES ("{}","{}")'.format(item['image_urls'],item['images']))
         self.connect.commit()
     # 关闭数据库
     def close_spider(self,spider):

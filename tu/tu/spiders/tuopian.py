@@ -4,7 +4,16 @@ from tu.items import TuItem
 class TuopianSpider(scrapy.Spider):
     name = 'tuopian'
     allowed_domains = ['wallhaven.cc']
-    start_urls = ['https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={a}' for a in range(0,120)]
+    url = ['https://wallhaven.cc/']
+    # page = 1
+    # start_urls = ["https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={a}"]
+    
+    def start_requests(self):
+        urls = 'https://wallhaven.cc/search?q=id%3A5&categories=111&purity=110&ratios=16x9&sorting=relevance&order=desc&page={}'
+        for i in range(1, 20):
+            yield scrapy.Request(urls.format(i), callback=self.parse)
+    
+    
     
     def parse(self, response):
         y = response.xpath('/html/body/main/div/section/ul')
@@ -23,4 +32,4 @@ class TuopianSpider(scrapy.Spider):
                 # print(img)
                 # print(qian)
                 # print(url)
-                yield item
+                yield item          
