@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/bgcde/文档/blog的副本/jpg/li"
+VIRTUAL_ENV="/Users/liu/Documents/jpg/li"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

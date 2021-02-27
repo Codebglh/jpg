@@ -174,3 +174,15 @@ ret = cursor.fetchall()
 cursor.close()
 conn.close()
 print(ret)
+
+
+
+
+显示Mac隐藏文件的命令
+
+defaults write com.apple.finder AppleShowAllFiles -bool true
+killall Finder
+
+隐藏Mac隐藏文件的命令
+defaults write com.apple.finder AppleShowAllFiles -bool false
+killall Finder
