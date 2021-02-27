@@ -63,9 +63,9 @@ USER_AGENT = random.choice(USER_AGENT_LIST)
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-   'tu.middlewares.TuDownloaderMiddleware': 543,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#    'tu.middlewares.TuDownloaderMiddleware': 543,
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -78,7 +78,7 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
    # 'tu.pipelines.TuPipeline1': 30,
    'tu.pipelines.TuPipeline': 300,
-   # 'scrapy.pipelines.images.ImagesPipeline':1
+   'scrapy.pipelines.images.ImagesPipeline':1
 }
 # IMAGES_STORE = "tu/tu"
 
