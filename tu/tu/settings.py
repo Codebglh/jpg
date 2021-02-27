@@ -21,7 +21,7 @@ LOG_LEVEL = "WARNING"
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 7
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -78,7 +78,7 @@ USER_AGENT = random.choice(USER_AGENT_LIST)
 ITEM_PIPELINES = {
    # 'tu.pipelines.TuPipeline1': 30,
    'tu.pipelines.TuPipeline': 300,
-   'scrapy.pipelines.images.ImagesPipeline':1
+#    'scrapy.pipelines.images.ImagesPipeline':1
 }
 # IMAGES_STORE = "tu/tu"
 

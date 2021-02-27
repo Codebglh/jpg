@@ -10,7 +10,7 @@ class TuopianSpider(scrapy.Spider):
     
     def start_requests(self):
         urls = 'https://wallhaven.cc/toplist?page={}'
-        for i in range(1, 120):
+        for i in range(1, 20):
             yield scrapy.Request(urls.format(i), callback=self.parse)
     
     
@@ -27,7 +27,7 @@ class TuopianSpider(scrapy.Spider):
                 url="https://w.wallhaven.cc/full/"+qian+"/wallhaven-"+a+".jpg"
                 img="6833939bly1gici"+a+"j20zk0m8"+a[0:3]+".jpg"
                 item = TuItem()
-                item["image_urls"]=url
+                item["urls"]=url
                 item["images"]=img
                 # print(img)
                 # print(qian)
