@@ -1,0 +1,14 @@
+Date: Sat, 27 Feb 2021 12:26:56 GMT
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6Imw5cWd1WENiQ1VKbEx2aWR0czEzd3c9PSIsInZhbHVlIjoiZzRcLzNucGdLcUV2S0RoaWxyNDc2WTRqTGVcL3VxNmkybFM4SFhobE5scmQwNnRPQTJSNldNdnZaNks4TDladnBaIiwibWFjIjoiN2FkMjc4Y2Q0Y2EwNWY4Nzc1MmExNzEwOTU3MjZiYjdjZDJlYTJmMjI0ODQ2OTA5ZTY4N2MwMzdkODAyNTRmOCJ9; expires=Sat, 27-Feb-2021 14:26:56 GMT; Max-Age=7200; path=/; secure; samesite=strict
+Set-Cookie: wallhaven_session=eyJpdiI6IjhmVXA3MnAxM3c4MlNXZ2thUnYyNHc9PSIsInZhbHVlIjoiMW1oNkdcL1hpTFhGMDYzb3dQTzJjSkVsaXRIVGNET0pGaFdrV2kyRDkyRlwvXC82RUF2N1VLOVh4XC9sT1dvWGhBckciLCJtYWMiOiIwODA0NDcyYmRhMDRhN2YzZDgxMzQwYjY4OTYyZTdhYTRkZjY4NWYwZDNjOGUyNmFiMmEwMGIzZTljOGVmOTJhIn0%3D; expires=Sat, 27-Feb-2021 14:26:56 GMT; Max-Age=7200; path=/; secure; httponly; samesite=strict
+X-Frame-Options: sameorigin
+Cf-Cache-Status: DYNAMIC
+Cf-Request-Id: 08850ddd9f000036559f30f000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=UHnzj5vRG3K9GQ3%2FJSOdyTmyGFedGNIr1DfXKeNOSP4bEHUC2KDdI6L7Rp1Mj6dqLbJRu47fl%2Bsvrab7h1sYkPZI5Ml%2B%2B3KOnshyKUM%3D"}]}
+Nel: {"max_age":604800,"report_to":"cf-nel"}
+Server: cloudflare
+Cf-Ray: 6281e5a8ffd93655-LAX
+Content-Encoding: gzip

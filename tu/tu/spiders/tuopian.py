@@ -27,7 +27,7 @@ class TuopianSpider(scrapy.Spider):
                 url="https://w.wallhaven.cc/full/"+qian+"/wallhaven-"+a+".jpg"
                 img="6833939bly1gici"+a+"j20zk0m8"+a[0:3]+".jpg"
                 item = TuItem()
-                item["urls"]=url
+                item["urls"] = url
                 item["images"]=img
                 # print(img)
                 # print(qian)

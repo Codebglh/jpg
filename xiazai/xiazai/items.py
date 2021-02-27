@@ -6,9 +6,7 @@
 import scrapy
 
 
-class TuItem(scrapy.Item):
+class XiazaiItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-        urls = scrapy.Field()
-        images = scrapy.Field()
-        # pass
+    pass
