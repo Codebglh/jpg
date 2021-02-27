@@ -1,28 +1,24 @@
 import pymysql
 import requests
-import fake_useragent
 from fake_useragent import UserAgent  # 导入包
-
-def main():
-    conn = pymysql.connect(host="localhost", user="root",password="liuhonga",database="img",charset="utf8")
-    cursor = conn.cursor()
-    sql = "SELECT url ,_image from img;"
-    cursor.execute(sql)
-    suju = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    for x in range(0,len(suju)):
-        c=suju[x]
-        for y in range(0,1):
-            name=c[1]
-            url=c[0]
-            # print(url)
+conn = pymysql.connect(host="127.0.0.1", user="root",password="liuhonga",database="liu",charset="utf8")
+cursor = conn.cursor()
+sql = "SELECT url ,img from img;"
+cursor.execute(sql)
+suju = cursor.fetchall()
+cursor.close()
+conn.close()
+for x in range(0,len(suju)):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE'
+    }
+    c=suju[x]
+    for y in range(0,1):
+        name=c[1]
+        url=c[0]
+        path = 'laj/'+name        
+        data = requests.get(url,headers=headers)
+        with open(path, 'wb') as file:
+            file.write(data.content)
+            # file.flush()
             print(name)
-            path = '/Users/bgcde/文档/jpg/laj/' 
-            dizi=path + name
-            USER_AGENT = UserAgent(verify_ssl=False).random
-            data = requests.get(url)
-            with open(dizi, 'wb') as file:
-                file.write(data.content)
-                file.flush()
-main()
