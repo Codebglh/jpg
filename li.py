@@ -1,5 +1,7 @@
 import pymysql
 import requests
+import fake_useragent
+from fake_useragent import UserAgent  # 导入包
 
 def main():
     conn = pymysql.connect(host="localhost", user="root",password="liuhonga",database="img",charset="utf8")
@@ -18,6 +20,7 @@ def main():
             print(name)
             path = '/Users/bgcde/文档/jpg/laj/' 
             dizi=path + name
+            USER_AGENT = UserAgent(verify_ssl=False).random
             data = requests.get(url)
             with open(dizi, 'wb') as file:
                 file.write(data.content)

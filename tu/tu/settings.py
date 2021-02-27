@@ -68,10 +68,10 @@ USER_AGENT = UserAgent(verify_ssl=False).random
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'tu.pipelines.TuPipeline1': 30,
-   'tu.pipelines.TuPipeline': 300,
-#    'scrapy.pipelines.images.ImagesPipeline':1
+   # 'tu.pipelines.TuPipeline': 300,
+   'scrapy.pipelines.images.ImagesPipeline':280
 }
-# IMAGES_STORE = "tu/tu"
+IMAGES_STORE = "/Users/liu/Documents/jpg/laj/"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
